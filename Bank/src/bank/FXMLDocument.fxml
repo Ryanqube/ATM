@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import impl.org.controlsfx.skin.DecorationPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bannk.FXMLDocumentController">
+   <children>
+      <JFXTextField fx:id="pin" focusColor="#0032c9" layoutX="184.0" layoutY="129.0" maxWidth="347.0" minWidth="250.0" onAction="#Pin" prefHeight="43.0" prefWidth="347.0" unFocusColor="RED" />
+      <Label layoutX="219.0" layoutY="90.0" prefHeight="39.0" prefWidth="278.0" text="MASUKKAN PIN ANDA" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="14.0" prefHeight="62.0" prefWidth="434.0" text="Selamat Datang di Moklet Bank" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="183.5" layoutY="204.5" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="184.0" AnchorPane.topAnchor="205.0">
+         <children>
+            <GridPane cache="true" gridLinesVisible="true" layoutX="0.5" layoutY="0.5" prefHeight="326.0" prefWidth="347.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="134.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="134.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="134.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <JFXButton fx:id="satu" onAction="#tekan1" prefHeight="88.0" prefWidth="115.0" text="1">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="dua" onAction="#tekan2" prefHeight="88.0" prefWidth="115.0" text="2" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="empat" onAction="#tekan4" prefHeight="88.0" prefWidth="115.0" text="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="lima" onAction="#tekan5" prefHeight="88.0" prefWidth="115.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="enam" onAction="#tekan6" prefHeight="88.0" prefWidth="115.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="tujuh" onAction="#tekan7" prefHeight="88.0" prefWidth="115.0" text="7" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="delapan" onAction="#tekan8" prefHeight="88.0" prefWidth="115.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="sembilan" onAction="#tekan9" prefHeight="88.0" prefWidth="115.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="hapus" onAction="#Hapus" prefHeight="88.0" prefWidth="115.0" text="c" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="sepuluh" onAction="#tekan0" prefHeight="88.0" prefWidth="115.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="ok" onAction="#Hasil" prefHeight="88.0" prefWidth="115.0" text="OK" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="41.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="tiga" onAction="#tekan3" prefHeight="88.0" prefWidth="115.0" text="3" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <DecorationPane layoutX="14.0" layoutY="29.0" />
+   </children>
+</AnchorPane>
